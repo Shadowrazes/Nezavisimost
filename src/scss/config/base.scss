@@ -4,16 +4,24 @@
 
 html, body {
     overflow-x: hidden;
-    font-family: Circe;
-    background-color: $bodyColor;
     scroll-behavior: smooth;
 }
 
+html {
+    font-size: 12px;
+}
+
 body {
+    background-color: $bodyColor;
+    overflow-y: hidden;
+    font-family: 'Circe';
+    line-height: 1.5;
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    overflow-y: hidden;
+
+    
 }
 
 .main {
@@ -30,104 +38,82 @@ body {
 
 a{
     color: $linkColor;
-    text-decoration: none;
-    transition: .4s;
-
-    &:hover {
-        color: $linkHoverColor;
-        text-decoration: none;
-    }
+    transition: .3s;
 
     @include any-hover {
         color: $linkHoverColor;
-        text-decoration: none;
     }
-}
-
-svg{
-    flex-shrink: 0;
 }
 
 section{
-    margin-bottom: 50px;
+    margin-top: 4rem;
 }
 
 input{
-    transition: 0.3s;
-
     &:focus{
-        border-color: rgba(255, 121, 31, 1);
+        border-color: $linkHoverColor;
     }
 
     &:focus-visible {
-        outline: 0;
-        text-indent: 15px;
+        outline: none;
+        text-indent: 5px;
     }
 }
 
 select{
     &:focus{
-        border-color: rgba(255, 121, 31, 1);
+        border-color: $linkHoverColor;
     }
 }
 
 textarea{
-    transition: 0.3s;
-
     &:focus{
         border-color: rgba(255, 121, 31, 1);
     }
 
     &:focus-visible {
-        outline: 0;
-        text-indent: 15px;
+        outline: none;
+        text-indent: 5px;
     }
 }
 
 .uk-input, .uk-select, .uk-textarea {
     transition: 0.3s;
+    font-size: 1.5em;
 }
 
-.uk-accordion-title {
-    &:hover {
-        color: $linkHoverColor;
-    }
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
 
-    @include any-hover {
-        color: $linkHoverColor;
-        text-decoration: none;
-    }
+h1 {
+    font-size: 3em;
+}
+h2 {
+    font-size: 2.5em;
+}
+h3, h4, h5, h6 {
+    font-size: 2em;
+}
+p {
+    font-size: 1.5rem;
 }
 
 .text{
     color: $textColor;
-    font-size: 24px;
+    font-size: 1.5em;
     font-weight: 400;
-    line-height: 150%;
-    margin: 0;
 
     &_huge{
-        color: $textColor;
-        font-size: 48px;
-        font-weight: 400;
-        line-height: 150%;
-        margin: 0;
+        font-size: 2em;
     }
 
     &_large{
-        color: $textColor;
-        font-size: 36px;
-        font-weight: 400;
-        line-height: 150%;
-        margin: 0;
+        font-size: 1.75em;
     }
     
     &_small{
-        color: $textColor;
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 150%;
-        margin: 0;
+        font-size: 1.25em;
     }
     
     &_bold{
@@ -139,16 +125,14 @@ textarea{
     }
 }
 
-.default-btn{
+.btn{
     cursor: pointer;
     transition: .3s;
     color: $linkColor;
     background: $linkBgColor;
-    font-size: 24px;
-    line-height: 150%;
-    text-align: center;
-    padding: 10px 30px;
-    border-radius: 50px;
+    font-size: 1.7em;
+    padding: 1rem 2rem;
+    border-radius: 5px;
     border: none;
     display: inline-flex;
     justify-content: center;
@@ -156,55 +140,23 @@ textarea{
 
     @include any-hover {
         opacity: .8;
+        background: $textColor;
+    }
+
+    &:focus {
+        outline: none;
+        background: $textColor;
     }
 }
 
-@include media($tablet){
-    .default-btn{
-        font-size: 18px;
-        padding: 5px 20px;
-    }
-
-    .text{
-        font-size: 18px;
-
-        &_huge{
-            font-size: 32px;
-        }
-
-        &_large{
-            font-size: 24px;
-        }
-        
-        &_small{
-            font-size: 16px;
-        }
+@include media($tablet) {
+    html {
+        font-size: 11px;
     }
 }
 
-@include media($mobile){
-    section{
-        margin-bottom: 25px;
-    }
-
-    .default-btn{
-        font-size: 14px;
-        padding: 5px 20px;
-    }
-
-    .text{
-        font-size: 16px;
-
-        &_huge{
-            font-size: 24px;
-        }
-
-        &_large{
-            font-size: 20px;
-        }
-        
-        &_small{
-            font-size: 14px;
-        }
+@include media($mobile) {
+    html {
+        font-size: 10px;
     }
 }
