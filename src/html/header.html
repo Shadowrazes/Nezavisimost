@@ -11,7 +11,7 @@
                 </div>
             </div>
     
-            <div class="header__card">
+            <div class="header__card header__info-card">
                 <img src="@img/icons/family-ico.png" class="header__card-image" alt="">
                 <div class="header__card-content">
                     <span class="header__card-title">20 ЛЕТ</span>
@@ -19,7 +19,7 @@
                 </div>
             </div>
     
-            <div class="header__card">
+            <div class="header__card header__info-card">
                 <img src="@img/icons/24hours-ico.png" class="header__card-image" alt="">
                 <div class="header__card-content">
                     <a href="tel:73832552829" class="header__card-title">+7 (383) 255-28-29</a>
@@ -30,6 +30,18 @@
             <a href="" class="btn header__recall-btn">Экстренная помощь</a>
         </div>
 
+        <div class="header__burger burger">
+            <button class="burger__button">
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+                <div class="burger__line"></div>
+            </button>
+        </div>
+    </div>
+</header>
+
+<div class="header-menu">
+    <div class="container header__menu-container">
         <ul class="header__menu-list text">
             <li class="header__menu-item">
                 <nav class="header__menu-dropnav" uk-dropnav>
@@ -56,16 +68,8 @@
                 </nav>
             </li>
         </ul>
-
-        <div class="header__burger burger">
-            <button class="burger__button">
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
-                <div class="burger__line"></div>
-            </button>
-        </div>
     </div>
-</header>
+</div>
 
 <div id="burger-menu" class="burger-menu uk-modal-full uk-modal">
     <ul class="burger-menu__items uk-modal-dialog uk-modal-body">
