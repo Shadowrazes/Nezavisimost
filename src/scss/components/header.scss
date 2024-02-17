@@ -19,9 +19,13 @@
         }
     }
 
+    &__menu-link {
+        color: $textColor;
+    }
+
     &__drop-menu-container {
         padding: 10px;
-        background: #031428E4;
+        background: #FFFFFFED;
         border-radius: 15px;
     }
 
@@ -36,10 +40,10 @@
     }
 
     &__drop-menu-link {
-        color: $btnColor !important;
+        color: $textColor;
 
         @include any-hover {
-            color: $btnHoverColor !important;
+            color: $textColor;
             text-decoration: none;
         }
     }

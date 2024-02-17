@@ -105,14 +105,17 @@ p {
     font-weight: 400;
 
     &_huge{
+        color: $textColor;
         font-size: 2em;
     }
 
     &_large{
+        color: $textColor;
         font-size: 1.75em;
     }
     
     &_small{
+        color: $textColor;
         font-size: 1.25em;
     }
     
