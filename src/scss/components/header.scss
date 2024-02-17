@@ -4,6 +4,7 @@
     border-style: solid;
     border-width: 0px 0px 1px 0px;
     border-color: #E4E4E4;
+    background-color: #FFFFFF;
 
     &__container {
         max-width: 1400px;
@@ -74,12 +75,14 @@
     }
 
     &__title {
+        text-align-last: left;
         font-family: sans-serif;
         color: $titleColor;
         font-size: 1.7em;
     }
 
     &__descr {
+        text-align-last: left;
         font-size: 1.5em;
     }
 }

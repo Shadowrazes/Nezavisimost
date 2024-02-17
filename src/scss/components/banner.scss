@@ -1,0 +1,69 @@
+.banner {
+    min-height: 650px;
+    background: url(@img/backgrounds/banner.jpg) no-repeat center/cover;
+    background-position: 0px -20vh;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 20px;
+
+    &__title {
+        margin: 0;
+    }
+
+    &__content {
+        background-color: #FFFFFFB8;
+        border-radius: 5px;
+        padding: 20px;
+        width: 70%;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin: 20px 0px;
+    }
+
+    &__btn-wrapper {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+
+    &__callback-img {
+        width: 1.5em;;
+        height: 1.5em;
+    }
+}
+
+@include media($tablet) {
+    .banner {
+        min-height: unset;
+        background-position: 0px 0vh;
+        background-position: center center;
+    
+        &__content {
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+    
+        &__btn-wrapper {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-direction: column;
+        }
+
+        &__social-btn-wrapper {
+        
+        }
+    
+        &__callback-img {
+            width: 1.5em;
+        }
+    }
+}
+
+@include media($mobile) {
+    
+}
