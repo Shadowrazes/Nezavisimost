@@ -37,11 +37,11 @@ body {
 }
 
 a{
-    color: $linkColor;
+    color: $btnColor;
     transition: .3s;
 
     @include any-hover {
-        color: $linkHoverColor;
+        color: $btnHoverColor;
     }
 }
 
@@ -51,7 +51,7 @@ section{
 
 input{
     &:focus{
-        border-color: $linkHoverColor;
+        border-color: $btnHoverColor;
     }
 
     &:focus-visible {
@@ -62,7 +62,7 @@ input{
 
 select{
     &:focus{
-        border-color: $linkHoverColor;
+        border-color: $btnHoverColor;
     }
 }
 
@@ -128,8 +128,8 @@ p {
 .btn{
     cursor: pointer;
     transition: .3s;
-    color: $linkColor;
-    background: $linkBgColor;
+    color: $btnColor;
+    background: $btnBgColor;
     font-size: 1.7em;
     padding: 1rem 2rem;
     border-radius: 5px;

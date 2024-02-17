@@ -36,10 +36,10 @@
     }
 
     &__drop-menu-link {
-        color: $linkColor !important;
+        color: $btnColor !important;
 
         @include any-hover {
-            color: $linkHoverColor !important;
+            color: $btnHoverColor !important;
             text-decoration: none;
         }
     }
@@ -113,10 +113,10 @@
 
     &__link {
         font-weight: 700;
-        color: $linkColor;
+        color: $btnColor;
 
         &:hover {
-            color: $linkHoverColor;
+            color: $btnHoverColor;
             text-decoration: none;
         }
     }
@@ -127,7 +127,7 @@
     }
 
     &__drop-menu-link{
-        color: $linkColor;
+        color: $btnColor;
         font-weight: 700;
     }
 }
