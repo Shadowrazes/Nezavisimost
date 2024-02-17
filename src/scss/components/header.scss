@@ -1,11 +1,41 @@
 .header {
     z-index: 1030;
+    padding: 15px;
 
-    &__container {
+    &__top {
         display: flex;
         align-items: center;
         justify-content: space-between;
     }
+
+    &__card {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__card-logo-wrapper {}
+
+    &__card-image {
+        width: 55px;
+        height: 55px;
+    }
+
+    &__card-content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-title {
+        font-family: sans-serif;
+        color: $titleColor;
+        font-size: 1.7em;
+    }
+
+    &__card-descr {
+        font-size: 1.5em;
+    }
+
+    &__recall-btn {}
 
     &__menu-list {
         margin: 0;

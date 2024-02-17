@@ -14,7 +14,7 @@ html {
 body {
     background-color: $bodyColor;
     overflow-y: hidden;
-    font-family: 'Circe';
+    font-family: 'Raleway';
     line-height: 1.5;
 
     min-height: 100vh;
@@ -37,7 +37,7 @@ body {
 }
 
 a{
-    color: $btnColor;
+    color: $linkColor;
     transition: .3s;
 
     @include any-hover {
@@ -142,8 +142,9 @@ p {
     align-items: center;
 
     @include any-hover {
-        opacity: .8;
-        background: $textColor;
+        text-decoration: none;
+        color: $btnHoverColor;
+        background: $btnHoverBgColor;
     }
 
     &:focus {
