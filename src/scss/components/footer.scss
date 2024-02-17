@@ -1,3 +1,30 @@
+.footer-links {
+    background: linear-gradient(0deg, #FFFFFFBB, #FFFFFFBB), 
+                url(@img/backgrounds/background-abstract-min.jpg) center/cover;
+
+    &__container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1400px;
+        padding: 40px 0px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    &__link {}
+
+    &__recall-btn {}
+
+    &__recall-btn-icon {
+        width: 1em;
+    }
+}
+
 .footer {
     padding: 15px;
 
