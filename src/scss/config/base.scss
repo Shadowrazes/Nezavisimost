@@ -14,7 +14,7 @@ html {
 body {
     background-color: $bodyColor;
     overflow-y: hidden;
-    font-family: 'Circe';
+    font-family: 'Raleway';
     line-height: 1.5;
 
     min-height: 100vh;
@@ -29,7 +29,7 @@ body {
 }
 
 .container {
-    max-width: 1440px;
+    max-width: 1200px;
     width: 100%;
     padding: 0 15px;
     margin: 0 auto;
@@ -41,7 +41,7 @@ a{
     transition: .3s;
 
     @include any-hover {
-        color: $linkHoverColor;
+        color: $btnHoverColor;
     }
 }
 
@@ -51,7 +51,7 @@ section{
 
 input{
     &:focus{
-        border-color: $linkHoverColor;
+        border-color: $btnHoverColor;
     }
 
     &:focus-visible {
@@ -62,7 +62,7 @@ input{
 
 select{
     &:focus{
-        border-color: $linkHoverColor;
+        border-color: $btnHoverColor;
     }
 }
 
@@ -105,14 +105,17 @@ p {
     font-weight: 400;
 
     &_huge{
+        color: $textColor;
         font-size: 2em;
     }
 
     &_large{
+        color: $textColor;
         font-size: 1.75em;
     }
     
     &_small{
+        color: $textColor;
         font-size: 1.25em;
     }
     
@@ -128,8 +131,8 @@ p {
 .btn{
     cursor: pointer;
     transition: .3s;
-    color: $linkColor;
-    background: $linkBgColor;
+    color: $btnColor;
+    background: $btnBgColor;
     font-size: 1.7em;
     padding: 1rem 2rem;
     border-radius: 5px;
@@ -139,8 +142,9 @@ p {
     align-items: center;
 
     @include any-hover {
-        opacity: .8;
-        background: $textColor;
+        text-decoration: none;
+        color: $btnHoverColor;
+        background: $btnHoverBgColor;
     }
 
     &:focus {
