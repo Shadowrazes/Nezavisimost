@@ -58,15 +58,26 @@
             text-decoration: none;
         }
     }
+
+    &__logo-title {
+        font-family: 'Circe', sans-serif;
+        font-size: 2em !important;
+    }
+
+    &__logo-image {
+        width: 55px !important;
+        height: 55px !important;
+    }
 }
 
 .icon-card {
     display: flex;
+    align-items: center;
     gap: 10px;
 
     &__image {
-        width: 55px;
-        height: 55px;
+        width: 40px;
+        height: 40px;
     }
 
     &__content {
@@ -76,14 +87,13 @@
 
     &__title {
         text-align-last: left;
-        font-family: sans-serif;
         color: $titleColor;
         font-size: 1.7em;
     }
 
     &__descr {
         text-align-last: left;
-        font-size: 1.5em;
+        font-size: 1.35em;
     }
 }
 
