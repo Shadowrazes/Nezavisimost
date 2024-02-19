@@ -135,18 +135,21 @@ function CallbackFormInit(){
 							})
 						}
 
-						jQuery.ajax({
-							url: '/wp-admin/admin-ajax.php',
-							method: 'post',
-							data: {
-								action: 'sendForm',
-								data: JSON.stringify(formData)
-							},
-							success: function(data){
-								let successPopupNode = document.querySelector('#success-popup');
-								UIkit.modal(successPopupNode).show();
-							}
-						});
+                        let successPopupNode = document.querySelector('#callback-popup__success');
+						UIkit.modal(successPopupNode).show();
+
+						// jQuery.ajax({
+						// 	url: '/wp-admin/admin-ajax.php',
+						// 	method: 'post',
+						// 	data: {
+						// 		action: 'sendForm',
+						// 		data: JSON.stringify(formData)
+						// 	},
+						// 	success: function(data){
+						// 		let successPopupNode = document.querySelector('#success-popup');
+						// 		UIkit.modal(successPopupNode).show();
+						// 	}
+						// });
                     })
                 })
             }
@@ -191,9 +194,9 @@ function InitTripleColumnSlider(){
 
 document.addEventListener('DOMContentLoaded', (event) => {
     CallbackFormInit();
-    InitTripleColumnSlider();
+    // InitTripleColumnSlider();
 
-    particlesJS.load('particles-slider', 'static/ParticlesJSON/GreenHexagons.json');
+    // particlesJS.load('particles-slider', 'static/ParticlesJSON/GreenHexagons.json');
 
     // Содержание статьи по заголовкам
     // InsertPostContents();
