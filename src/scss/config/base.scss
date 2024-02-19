@@ -68,7 +68,7 @@ select{
 
 textarea{
     &:focus{
-        border-color: rgba(255, 121, 31, 1);
+        border-color: $btnHoverColor;
     }
 
     &:focus-visible {
@@ -83,6 +83,7 @@ textarea{
 }
 
 h1, h2, h3, h4, h5, h6 {
+    color: $titleColor;
     font-weight: bold;
     font-family: 'Raleway';
 }
@@ -141,6 +142,7 @@ p {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 
     @include any-hover {
         text-decoration: none;
@@ -152,6 +154,11 @@ p {
         outline: none;
         background: $textColor;
     }
+}
+
+.btn-icon {
+    width: 1em;
+    height: 1em;
 }
 
 @include media($tablet) {

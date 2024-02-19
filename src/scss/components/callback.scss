@@ -1,0 +1,47 @@
+.callback {
+
+    &__container {
+        
+    }
+
+    &__content {
+        background: $frameColor;
+        border-radius: 5px;
+        border: solid $borderColor 2px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px;
+        gap: 20px;
+    }
+
+    &__info {}
+
+    &__info-title {}
+
+    &__info-descr {}
+
+    &__recall-btn {
+        padding: 2rem;
+    }
+
+    &__recall-btn-icon {
+        
+    }
+
+    &__recall-btn-text {}
+}
+
+@include media($tablet){
+    .callback {
+        &__content {
+            flex-direction: column;
+            text-align: center;
+            padding: 25px;
+        }
+
+        &__recall-btn {
+            padding: 1rem 2rem;
+        }
+    }
+}

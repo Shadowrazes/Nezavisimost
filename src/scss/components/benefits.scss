@@ -26,8 +26,8 @@
         flex: 0 0 33%;
         padding: 20px;
         gap: 20px;
-        border-right: solid #E4E4E4 2px;
-        border-bottom: solid #E4E4E4 2px;
+        border-right: solid $borderColor 2px;
+        border-bottom: solid $borderColor 2px;
 
         &:nth-child(3n){
             border-right: unset;
@@ -67,7 +67,7 @@
             border-right: unset;
     
             &:nth-child(1n+4){
-                border-bottom: solid #E4E4E4 2px;
+                border-bottom: solid $borderColor 2px;
             }
 
             &:nth-last-child(1) {

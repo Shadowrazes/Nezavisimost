@@ -44,15 +44,15 @@
         </div>
         <div class="footer-links__column">
             <a href="#callback-popup" class="btn footer-links__recall-btn" uk-toggle>
-                <img src="@img/icons/emergency_help.svg" alt="" class="footer-links__recall-btn-icon" uk-svg>
+                <img src="@img/icons/emergency_help.svg" alt="" class="btn-icon footer-links__recall-btn-icon" uk-svg>
                 <span>Экстренная помощь</span>
             </a>
             <a href="https://wa.me/79628352829" class="btn footer-links__recall-btn">
-                <img src="@img/icons/socials/whatsapp.svg" alt="" class="footer-links__recall-btn-icon" uk-svg>
+                <img src="@img/icons/socials/whatsapp.svg" alt="" class="btn-icon footer-links__recall-btn-icon" uk-svg>
                 <span>Написать в WhatsApp</span>
             </a>
             <a href="https://t.me/+79628352829" class="btn footer-links__recall-btn">
-                <img src="@img/icons/socials/telegram.svg" alt="" class="footer-links__recall-btn-icon" uk-svg>
+                <img src="@img/icons/socials/telegram.svg" alt="" class="btn-icon footer-links__recall-btn-icon" uk-svg>
                 <span>Написать в Telegram</span>
             </a>
         </div>
@@ -119,7 +119,12 @@
     <div id="callback-popup__success" class="callback-popup__success" uk-modal-full uk-modal>
         <div class="uk-modal-dialog uk-modal-body uk-margin-auto-vertical">
             <button class="uk-modal-close-default" type="button" uk-close></button>
-            <div id="result-alert" class="uk-text-success"><p>Ваша заявка принята!</p><p>Спасибо за обращение.</p></div>
+            <div class="uk-modal-header">
+                <span class="text_huge">Обращение отправлено</span>
+            </div>
+            <div class="uk-modal-body">
+                <span class="text">Мы свяжемся с вами в ближайшее время!</span>
+            </div>
         </div>
     </div>
 </footer>
