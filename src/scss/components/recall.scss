@@ -1,0 +1,56 @@
+.recall {
+    background: linear-gradient(0deg, #FBFCFCDD, #FBFCFCDD),
+                url(@img/backgrounds/white-abstract.jpg) no-repeat center/cover;
+
+    &__container {
+        padding: 40px 15px;
+    }
+
+    &__content {
+        display: flex;
+        gap: 30px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__info {
+        flex: 0 0 50%;
+    }
+
+    &__info-title {}
+
+    &__info-descr {}
+
+    &__form {
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 30%;
+        gap: 20px;
+    }
+
+    &__form-phone-input {
+        border-radius: 5px;
+        padding: 20px 10px;
+    }
+
+    &__form-submit-btn {}
+}
+
+@include media($tablet){
+    .recall {
+        &__content {
+            flex-direction: column;
+            align-items: center;
+        }
+    
+        &__info {
+            text-align: center;
+        }
+    
+        &__form {
+            flex-direction: column;
+            width: 100%;
+            gap: 20px;
+        }
+    }
+}

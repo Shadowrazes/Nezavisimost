@@ -9,17 +9,17 @@
     }
 
     &__list-item {
-        background: #FFFFFF;
-        border: 1px solid #000000;
-        border-radius: 15px;
+        border-bottom: 1px solid $borderColor;
+        padding-bottom: 15px;
     }
 
     &__list-item-title {
-        padding: 2.5rem;
+        font-size: 1.7rem;
+        margin: 0;
     }
 
     &__list-item-content {
-        padding: 0 2.5rem 2.5rem 2.5rem;
+        padding: 2.5rem 0;
     }
 }
 
