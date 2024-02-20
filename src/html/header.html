@@ -1,4 +1,4 @@
-<header class="header">
+<header class="header" uk-sticky="media: (max-width: 768px)">
     <div class="header__container container">
         <div class="header__top">
             <div class="icon-card header__logo-icon">
@@ -45,7 +45,7 @@
         
     </div>
 
-    <div class="header__bottom" uk-sticky>
+    <div class="header__bottom" uk-sticky="media: 768">
         <div class="uk-position-relative">
 
             <nav class="uk-navbar-container uk-navbar-transparent">
@@ -128,9 +128,59 @@
                                     </div>
                                 </li>
                                 <li><a class="header__menu-link" href="#">Стоимость лечения</a></li>
-                                <li><a class="header__menu-link" href="#">Близким</a></li>
+                                <li>
+                                    <a class="header__menu-link" href="#">Близким <span uk-navbar-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav" >
+                                            <div class="header__dropdown">
+                                                <div class="header__dropdown-column">
+                                                    <li class="uk-active"><a class="header__dropdown-title" href="#">Лечение игромании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+
+                                                    <li class="uk-nav-divider"></li>
+
+                                                    <li class="uk-active"><a class="header__dropdown-title" href="#">Выведение из запоя</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                </div>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a class="header__menu-link" href="#">Блог</a></li>
-                                <li><a class="header__menu-link" href="#">О центре</a></li>
+                                <li>
+                                    <a class="header__menu-link" href="#">О центре <span uk-navbar-parent-icon></span></a>
+                                    <div class="uk-navbar-dropdown" uk-drop="boundary: !.uk-navbar; stretch: x; flip: false">
+                                        <ul class="uk-nav uk-navbar-dropdown-nav" >
+                                            <div class="header__dropdown">
+                                                <div class="header__dropdown-column">
+                                                    <li class="uk-active"><a class="header__dropdown-title" href="#">Лечение игромании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Лечение и диагностика наркомании</a></li>
+
+                                                    <li class="uk-nav-divider"></li>
+
+                                                    <li class="uk-active"><a class="header__dropdown-title" href="#">Выведение из запоя</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                    <li><a class="header__dropdown-link"  href="#">Анонимное лечение наркомании</a></li>
+                                                </div>
+                                            </div>
+                                            
+                                        </ul>
+                                    </div>
+                                </li>
                                 <li><a class="header__menu-link" href="#">Конакты центра</a></li>
                             </ul>
                         </div>
