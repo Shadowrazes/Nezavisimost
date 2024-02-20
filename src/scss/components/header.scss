@@ -1,5 +1,5 @@
 .header {
-    z-index: 1030;
+    z-index: 1005;
     padding: 15px;
     border-style: solid;
     border-width: 0px 0px 1px 0px;
@@ -123,6 +123,40 @@
         &:hover {
             text-decoration: underline !important;
         }
+    }
+
+    &__burger-btn {
+        flex-direction: column;
+        gap: 4px;
+        background-color: $btnBgColor;
+        flex: 0 0 40px;
+        height: 40px;
+        padding: 10px;
+    }
+
+    &__burger-line {
+        width: 20px;
+        height: 2px;
+        background-color: white;
+    }
+
+    &__mobile-recall-btn {
+        height: 40px;
+        padding: 10px 15px;
+    }
+
+    &__mobile-nav-wrapper {
+        display: none;
+        gap: 5px;
+    }
+
+    &__burger-close {
+        top: 10px;
+        right: 10px;
+    }
+
+    &__burger-menu-link {
+        font-size: 1.2rem;
     }
 }
 
@@ -259,6 +293,10 @@
             height: 35px !important;
         }
 
+        &__container {
+            padding: 0 !important;
+        }
+
         &__dropdown {
             gap: 10px;
         }
@@ -278,8 +316,37 @@
 
 @include media($mobile){
     .header {
+        padding: 10px 15px;
+        &__top {
+            gap: 5px;
+        }
+
         &__phone-icon {
             display: none;
+        }
+
+        &__bottom {
+            display: none;
+        }
+
+        &__recall-btn {
+            display: none;
+        }
+
+        &__mobile-nav-wrapper {
+            display: flex;
+        }
+
+        &__logo-title {
+            font-size: 1.5em !important;
+        }
+
+        &__logo-descr {
+            font-size: 1.2em !important;
+        }
+
+        &__logo-icon {
+            gap: 5px;
         }
     }
 }

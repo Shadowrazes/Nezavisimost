@@ -171,6 +171,10 @@ textarea{
     height: 1em;
 }
 
+a[href*="tel:"] {
+    white-space: nowrap;
+}
+
 @include media($tablet) {
     html {
         font-size: 11px;
