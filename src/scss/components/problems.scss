@@ -1,0 +1,89 @@
+.problems {
+    background: linear-gradient(#46758D88, #46758D88), url('@img/problems.webp') no-repeat center center;
+    background-size: cover;
+    padding: 5rem 0;
+    &__container {}
+    &__title {
+        color: white;
+    }
+    &__descr {
+        color: white;
+        display: block;
+        text-align: center;
+    }
+    &__grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+}
+.problem-card {
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 4rem 2rem;
+    position: relative;
+    overflow: hidden;
+    filter: drop-shadow(0 0 7px #00000033);
+    @include any-hover {
+        .problem-card {
+            &__number {
+                transform: translateY(-5px);
+            }
+        }
+        
+    }
+    &__text {
+        position: relative;
+        z-index: 2;
+    }
+    &__number {
+        position: absolute;
+        bottom: -25px;
+        right: 20px;
+        font-size: 13rem;
+        font-weight: 700;
+        line-height: 1;
+        color: #6CABCC3D;
+        transition: .3s;
+    }
+    &:nth-child(n+3):nth-child(-n+5) {
+        .problem-card {
+            &__number {
+                bottom: -15px;
+            }
+        }
+    }
+}
+
+@include media($tablet){
+    .problems {
+		&__container {}
+		&__title {}
+		&__descr {}
+		&__grid {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+    .problem-card {
+        &__text {}
+        &__number {}
+    }
+}
+
+@include media($mobile){
+    .problems {
+		&__container {}
+		&__title {}
+		&__descr {}
+		&__grid {
+            grid-template-columns: 1fr;
+        }
+    }
+    .problem-card {
+        &__text {}
+        &__number {}
+    }
+}
