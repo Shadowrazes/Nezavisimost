@@ -2,7 +2,9 @@
 
     &__container {}
 
-    &__slider {}
+    &__slider {
+        max-width: 100%;
+    }
 
     &__slider-wrapper {}
 

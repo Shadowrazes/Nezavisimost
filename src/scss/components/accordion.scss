@@ -4,7 +4,11 @@
     }
 
     &__title {
-        margin-bottom: 4rem;
+        
+    }
+
+    &__list {
+        width: 100%;
     }
 
     &__list-item {
@@ -20,8 +24,4 @@
     &__list-item-content {
         padding: 2.5rem 0;
     }
-}
-
-.uk-accordion-content {
-    margin: 0;
 }
