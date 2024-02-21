@@ -55,6 +55,10 @@ a{
     }
 }
 
+a[href*="tel:"] {
+    white-space: nowrap;
+}
+
 section{
     margin-top: 4rem;
     position: relative;
@@ -111,6 +115,10 @@ textarea{
 .uk-input, .uk-select, .uk-textarea {
     transition: 0.3s;
     font-size: 1.5em;
+}
+
+.uk-accordion-content {
+    margin: 0;
 }
 
 .uk-accordion-title::before {
@@ -190,10 +198,6 @@ textarea{
 .btn-icon {
     width: 1em;
     height: 1em;
-}
-
-a[href*="tel:"] {
-    white-space: nowrap;
 }
 
 .slider {
