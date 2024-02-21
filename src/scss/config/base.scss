@@ -192,6 +192,10 @@ textarea{
     height: 1em;
 }
 
+a[href*="tel:"] {
+    white-space: nowrap;
+}
+
 .slider {
     &_centered {
         img {
