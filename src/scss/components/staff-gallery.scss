@@ -1,0 +1,35 @@
+.staff-gallery {
+
+    &__container {}
+
+    &__title {}
+
+    &__slider {}
+
+    &__slider-wrapper {
+    }
+
+    &__slider-container {}
+
+    &__slider-items {}
+
+    &__slider-item {}
+
+    &__slider-item-wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    &__slider-item-img {
+        width: 85%;
+    }
+
+    &__slider-item-title {}
+
+    &__slider-item-descr {}
+
+    &__slider-navs {}
+
+    &__slider-nav-btn {}
+}
