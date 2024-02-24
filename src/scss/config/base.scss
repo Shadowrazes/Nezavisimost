@@ -50,6 +50,10 @@ a{
     color: $linkColor;
     transition: .3s;
 
+    &:focus-visible {
+        outline: none;
+    }
+
     @include any-hover {
         color: $btnHoverColor;
     }
@@ -133,6 +137,10 @@ textarea{
 
 .uk-lightbox-button {
     color: #FFFFFF;
+}
+
+.uk-tab>*>a {
+    font-size: 1.75em;
 }
 
 .section-title {

@@ -1,0 +1,99 @@
+.price {
+    padding: 5em 0em;
+    background: linear-gradient(0deg, #FFFFFFAA, #FFFFFFAA),
+                url(@img/backgrounds/sky.jpg) no-repeat center/cover;
+    
+    &__container {}
+
+    &__title {
+        margin: 0;
+    }
+
+    &__content {
+        padding: 30px;
+        background: #FFFFFFDD;
+        border: 1px solid $borderColor;
+        border-radius: 10px;
+        width: 100%;
+    }
+
+    &__tab {
+        gap: 20px;
+        justify-content: space-evenly;
+    }
+
+    &__tab-btn-wrapper {}
+
+    &__tab-btn {
+        user-select: none;
+        padding: 20px 10px !important;
+    }
+
+    &__tab-btn-text {
+        text-transform: none;
+    }
+
+    &__tab-btn-name {
+        color: $textColor;
+    }
+
+    &__tab-btn-cost {
+        color: $textColorBlue;
+    }
+
+    &__tab-wrapper {}
+
+    &__tab-content {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__tab-item {
+        flex: 0 0 48%;
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    &__tab-item-name {}
+
+    &__tab-item-cost {
+        flex-shrink: 0;
+        color: $textColorBlue;
+    }
+
+    &__more-btn {}
+}
+
+@include media($tablet){
+    .price {
+        padding: 25px 0px;
+
+        &__tab {
+            gap: 0px;
+            justify-content: space-evenly;
+        }
+
+        &__content {
+            padding: 15px;
+        }
+    
+        &__tab-btn {
+            padding: 10px !important;
+        }
+    
+        &__tab-content {
+            gap: 20px;
+        }
+    
+        &__tab-item {
+            flex: 0 0 100%;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            gap: 10px;
+        }
+    }
+}
