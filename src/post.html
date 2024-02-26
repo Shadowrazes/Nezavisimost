@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+    <html lang="ru">
+    @@include('html/head.html', {
+        'title': 'SITE'
+    })
+    <body>
+        @@include('html/header.html', {})
+
+        <main class="main post">
+            <div class="post__title">
+                <div class="post__title-container container">
+                    <h1 class="post__title-text">Лечение наркомании в Новосибирске</h1>
+                </div>
+            </div>
+
+            <div class="post__container container">
+                <div class="post__wrapper">
+                    <div class="post__header">
+                        <div class="post__header-breadcrumb">
+                            <span class="text_small">Главная страница » Лечение наркомании в Новосибирске</span>
+                        </div>
+                        <div class="post__header-menu">
+                            <h3 class="post__header-menu-title">Коротко о нас</h3>
+                            <div class="text_small post__header-menu-links">
+                                <a href="#" class="post__header-menu-link">Режим дня</a>
+                                <a href="#" class="post__header-menu-link">Правила центра</a>
+                                <a href="#" class="post__header-menu-link">Медикаментозное лечение</a>
+                                <a href="#" class="post__header-menu-link">Лечебная команда</a>
+                                <a href="#" class="post__header-menu-link">Социальная реабилитация</a>
+                            </div>
+                        </div>
+                        <div class="post__header-contents-wrapper">
+                            <ul class="post__header-contents" uk-accordion>
+                                <li class="post__header-contents-accordion">
+                                    <a class="uk-accordion-title post__header-contents-title" href>Содержание</a>
+                                    <aside class="uk-accordion-content post__header-contents-list">
+                                        
+                                    </aside>
+                                </li>
+                            </ul> 
+                        </div>
+                    </div>
+
+                    <div class="post__content">
+                        @@include('html/price-table.html', {})
+                        @@include('html/accordion.html', {})
+                    </div>
+
+                    @@include('html/calculator.html', {})
+                    @@include('html/centered-gallery.html', {})
+                    @@include('html/reviews.html', {})
+                    @@include('html/recall.html', {})
+                </div>
+
+                <div class="post__sidebar">
+                    <div class="post__sidebar-articles">
+                        <div class="text article-card post__sidebar-articles-card">
+                            <a href="#" class="article-card__img-wrapper">
+                                <img src="@img/additional/article.jpeg" alt="" class="article-card__img">
+                            </a>
+                            <div class="article-card__preview">
+                                <h3 class="article-card__title">
+                                    <a href="#" class="article-card__link">Что такое игромания?</a>
+                                </h3>
+                                <span class="article-card__descr">
+                                    При разговоре на тему игромании у многих появляется идея, что человеку с 
+                                    такой проблемой нужно просто «объяснить», что это невыгодно, плохо. 
+                                    Создается впечатление, что игрок просто не понимает, что проигрывает больше, 
+                                    чем выигрывает
+                                </span>
+                                <a href="#" class="article-card__more-link">Подробнее</a>
+                            </div>
+                            <div class="article-card__meta-container">
+                                <div class="article-card__meta-wrapper">
+                                    <span class="article-card__meta-date">29 января, 2024</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        @@include('html/footer.html', {})
+        @@include('html/script.html', {})
+    </body>
+</html> 

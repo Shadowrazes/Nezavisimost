@@ -16,21 +16,14 @@
 
     &__card {
         flex: 0 0 32%;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
 
     &__card-img-wrapper {}
 
     &__card-img {
-        object-fit: cover;
-        width: 100%;
-        height: 20rem;
     }
 
     &__card-title {
-        margin: 0;
     }
 
     &__card-descr {}
