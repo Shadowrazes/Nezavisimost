@@ -28,7 +28,7 @@ isWebp();
 const InsertPostContents = () => {
     const headers = [];
     const indexes = [0];
-    const articleContent = document.querySelector('.post__header');
+    const articleContent = document.querySelector('.post__content-wrapper');
     // функция для получения предыдущего header
     const getPrevHeader = (diff = 0) => {
         if ((indexes.length - diff) === 0) {

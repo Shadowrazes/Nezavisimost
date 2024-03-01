@@ -33,7 +33,7 @@
 
     &__form {
         z-index: 2;
-        flex: 0 0 70%;
+        width: 70%;
         padding: 30px;
         background-color: #FFFFFFEE;
         border: 1px solid $borderColor;
@@ -74,7 +74,6 @@
     }
 
     &__form-submit-btn {
-        flex: 0 0 30%;
         align-self: flex-end;
     }
 }
@@ -90,17 +89,12 @@
         }
     
         &__form {
-            flex: 0 0 100%;
+            width: 100%;
             text-align: center;
         }
     
         &__form-inputs {
             gap: 10px;
-        }
-    
-        &__form-submit-btn {
-            flex: 0 0 30%;
-            align-self: flex-end;
         }
     }
 }

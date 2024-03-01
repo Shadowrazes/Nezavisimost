@@ -1,0 +1,68 @@
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    &__articles {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__articles-card {
+        
+    }
+
+    &__recall-container {
+        background: $frameColor;
+        border-radius: 5px;
+        border: 1px solid $borderColor;
+        display: flex;
+    }
+
+    &__recall-content {
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        flex: 0 0 66%;
+        gap: 20px;
+    }
+
+    &__recall-popup-btn {}
+
+    &__recall-social {
+        gap: 10px;
+        display: flex;
+    }
+
+    &__recall-social-btn {
+        padding: 1rem 1rem;
+    }
+
+    &__recall-social-btn-img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+
+    &__recall-img-wrapper {
+        flex: 0 1 33%;
+        background-image: url(@img/additional/doctor.jpg);
+        background-position: center left;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    &__articles-full-btn {}
+}
+
+@include media($tablet) {
+    .sidebar {
+        &__recall-social-btn {
+            width: 33%;
+        }
+    }
+}
+
+@include media($mobile) {
+    
+}

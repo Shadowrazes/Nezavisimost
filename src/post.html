@@ -29,11 +29,11 @@
                                 <a href="#" class="post__header-menu-link">Социальная реабилитация</a>
                             </div>
                         </div>
-                        <div class="post__header-contents-wrapper">
+                        <div class="post__header-contents-container">
                             <ul class="post__header-contents" uk-accordion>
                                 <li class="post__header-contents-accordion">
-                                    <a class="uk-accordion-title post__header-contents-title" href>Содержание</a>
-                                    <aside class="uk-accordion-content post__header-contents-list">
+                                    <a class="uk-accordion-title text post__header-contents-title" href>Содержание</a>
+                                    <aside class="uk-accordion-content text post__header-contents-list">
                                         
                                     </aside>
                                 </li>
@@ -42,8 +42,11 @@
                     </div>
 
                     <div class="post__content">
+                        <div class="post__content-wrapper">
+                            <h2>заголовок</h2>
+                            @@include('html/accordion.html', {})
+                        </div>
                         @@include('html/price-table.html', {})
-                        @@include('html/accordion.html', {})
                     </div>
 
                     @@include('html/calculator.html', {})
@@ -52,32 +55,7 @@
                     @@include('html/recall.html', {})
                 </div>
 
-                <div class="post__sidebar">
-                    <div class="post__sidebar-articles">
-                        <div class="text article-card post__sidebar-articles-card">
-                            <a href="#" class="article-card__img-wrapper">
-                                <img src="@img/additional/article.jpeg" alt="" class="article-card__img">
-                            </a>
-                            <div class="article-card__preview">
-                                <h3 class="article-card__title">
-                                    <a href="#" class="article-card__link">Что такое игромания?</a>
-                                </h3>
-                                <span class="article-card__descr">
-                                    При разговоре на тему игромании у многих появляется идея, что человеку с 
-                                    такой проблемой нужно просто «объяснить», что это невыгодно, плохо. 
-                                    Создается впечатление, что игрок просто не понимает, что проигрывает больше, 
-                                    чем выигрывает
-                                </span>
-                                <a href="#" class="article-card__more-link">Подробнее</a>
-                            </div>
-                            <div class="article-card__meta-container">
-                                <div class="article-card__meta-wrapper">
-                                    <span class="article-card__meta-date">29 января, 2024</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                @@include('html/sidebar.html', {})
             </div>
         </main>
 

@@ -3,10 +3,10 @@
                 url(@img/backgrounds/white-abstract.jpg) no-repeat center/cover;
 
     &__container {
-        padding: 40px 15px;
     }
 
     &__content {
+        padding: 40px 15px;
         display: flex;
         gap: 30px;
         justify-content: space-between;
@@ -24,7 +24,7 @@
     &__form {
         display: flex;
         flex-direction: column;
-        flex: 0 0 30%;
+        flex: 0 0 35%;
         gap: 20px;
     }
 
