@@ -1,0 +1,154 @@
+.staff {
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    &__card {
+        border-radius: 10px;
+        box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+        background: linear-gradient(0deg, #FFFFFFBB, #FFFFFFBB), 
+                    url(@img/backgrounds/background-abstract-min.jpg) center/cover;
+        padding: 20px;
+        flex: 0 0 49%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__card-top {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        border-bottom: 2px solid $borderColor;
+        padding-bottom: 20px;
+    }
+
+    &__card-img-wrapper {
+        flex: 0 0 49%;
+    }
+
+    &__card-img {
+        width: 100%;
+        border-radius: 10px;
+        max-height: 400px;
+    }
+
+    &__card-preview {
+        flex: 0 0 49%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__card-preview-name {
+        font-size: 1.7rem;
+        margin: 0;
+    }
+
+    &__card-preview-grade {}
+
+    &__card-preview-contacts {
+        margin-top: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__card-preview-phone {}
+
+    &__card-preview-phone-img {}
+
+    &__card-preview-phone-text {}
+
+    &__card-preview-popup {}
+
+    &__card-bottom {
+        height: 100%;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__card-descr {
+
+    }
+
+    &__card-more {
+        margin: 0;
+    }
+
+    &__card-more-wrapper {}
+
+    &__card-more-title {
+        color: $linkColor;
+
+        &::before {
+            display: none;
+        }
+    }
+
+    &__card-more-text {
+        padding: 10px 0px;
+    }
+
+    &__card-slider {
+        margin-top: auto;
+    }
+
+    &__card-slider-title {
+        margin: 0;
+    }
+
+    &__card-slider-wrapper {}
+
+    &__card-slider-container {}
+
+    &__card-slider-items {}
+
+    &__card-slider-item {}
+
+    &__card-slider-img-wrapper {}
+
+    &__card-slider-img {
+        width: 125px;
+        height: 125px;
+        border-radius: 10px;
+    }
+
+    &__card-slider-navs {}
+
+    &__card-slider-nav-btn {}
+}
+
+@include media($tablet) {
+    .staff {
+        &__card {
+            flex: 0 0 100%;
+        }
+    
+        &__card-preview {
+            gap: 50px;
+        }
+    }
+}
+
+@include media($mobile) {
+    .staff {
+        &__card-top {
+            flex-direction: column;
+        }
+    
+        &__card-preview {
+            gap: 20px;
+        }
+    
+        &__card-preview-contacts {
+            margin-top: unset;
+        }
+    }
+}

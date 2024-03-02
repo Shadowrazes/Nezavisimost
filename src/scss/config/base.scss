@@ -181,7 +181,7 @@ textarea{
     transition: .3s;
     color: $btnColor;
     background: $btnBgColor;
-    font-size: 1.7em;
+    font-size: 1.7rem;
     padding: 1rem 2rem;
     border-radius: 5px;
     border: none;
@@ -232,6 +232,8 @@ textarea{
     &__item-wrapper {
         display: flex;
         align-items: center;
+        justify-content: center;
+        width: 85%;
     }
 }
 
