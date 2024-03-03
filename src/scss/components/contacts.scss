@@ -1,0 +1,68 @@
+.contacts {
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__info {
+        flex: 0 0 45%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__info-card {
+        background: $frameColor;
+        border-radius: 5px;
+        border: 1px solid $borderColor;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    &__info-card-title {
+        margin: 0;
+    }
+
+    &__info-card-text {}
+
+    &__info-card-text-link {}
+
+    &__map {
+        flex: 0 0 50%;
+    }
+
+    &__bottom {
+        padding: 20px;
+        border-bottom: 1px solid $borderColor;
+        text-align: center;
+    }
+
+    &__biz-info {}
+}
+
+@include media($mobile) {
+    .contacts {
+    
+        &__top {
+            flex-direction: column;
+        }
+    
+        &__map {
+            iframe {
+                min-height: 400px;
+            }
+        }
+    }
+}
