@@ -1,0 +1,42 @@
+.video-gallery {
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    &__descr {
+    }
+
+    &__videos-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    &__video-wrapper {
+        flex: 0 0 48%;
+    }
+
+    &__video {
+        width: 100%;
+    }
+}
+
+@include media($tablet) {
+    
+}
+
+@include media($mobile) {
+    .video-gallery {
+    
+        &__video-wrapper {
+            flex: 0 0 100%;
+        }
+    }
+}

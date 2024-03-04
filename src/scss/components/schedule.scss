@@ -1,0 +1,31 @@
+.schedule {
+
+    &__container {}
+
+    &__title {
+        text-align: center;
+    }
+
+    &__grid {
+        
+    }
+
+    &__grid-rows {}
+
+    &__grid-row {
+        border: 1px solid $btnBgColor;
+    }
+
+    &__item {
+        padding: 10px !important;
+        border: 1px solid $btnBgColor;
+        text-align: center;
+    }
+
+    &__item-time {
+        color: $titleColor;
+        font-weight: 700;
+    }
+
+    &__item-name {}
+}

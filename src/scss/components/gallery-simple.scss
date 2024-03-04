@@ -1,0 +1,30 @@
+.slider {
+
+    &__wrapper {}
+
+    &__item {}
+
+    &__item-wrapper {}
+}
+.gallery-simple {
+
+    &__wrapper {}
+
+    &__container {}
+
+    &__items {}
+
+    &__item {}
+
+    &__img-wrapper {}
+
+    &__img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    &__navs {}
+
+    &__nav-btn {}
+}

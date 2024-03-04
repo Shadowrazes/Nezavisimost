@@ -43,9 +43,11 @@
 
                     <div class="post__content">
                         <div class="post__content-wrapper">
-                            <h2>заголовок</h2>
+                            @@include('html/gallery-simple.html', {})
+                            @@include('html/staff-detail.html', {})
                             @@include('html/accordion.html', {})
                         </div>
+                        @@include('html/schedule.html', {})
                         @@include('html/price-table.html', {})
                     </div>
 

@@ -166,7 +166,6 @@
 
     &__header-contents-container {
         margin-bottom: 20px;
-        padding: 10px;
         border: 4px double #c9c6c1;
     }
 
@@ -180,7 +179,9 @@
 
     &__header-contents-accordion {}
 
-    &__header-contents-title {}
+    &__header-contents-title {
+        padding: 10px;
+    }
 
     &__header-contents-list {}
 

@@ -8,19 +8,8 @@
 
     &__grid-rows {}
 
-    .uk-table-striped tbody tr:nth-of-type(odd), .uk-table-striped>tr:nth-of-type(odd) {
-        background: $frameColor;
-    }
-
-    .uk-table-striped tbody tr:nth-of-type(even), .uk-table-striped>tr:nth-of-type(even) {
-        background: $borderColor;
-    }
-
     &__grid-row {
-        transition: unset !important;
-        @include any-hover {
-            background: $textColorBlue !important;
-        }
+        
     }
 
     &__item {}

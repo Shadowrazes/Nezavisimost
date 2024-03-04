@@ -96,6 +96,13 @@ textarea{
     }
 }
 
+tr {
+    transition: unset !important;
+    @include any-hover {
+        background: $textColorBlue !important;
+    }
+}
+
 .main {
     flex-grow: 1;
 }
@@ -125,6 +132,18 @@ textarea{
     margin: 0;
 }
 
+.uk-accordion {
+    margin: 0;
+    
+    li {
+        margin-top: 0 !important;
+    }
+}
+
+.uk-accordion-title {
+    padding: 15px 0px;
+}
+
 .uk-accordion-title::before {
     width: 1em;
     height: 1em;
@@ -143,28 +162,36 @@ textarea{
     font-size: 1.75em;
 }
 
+.uk-table-striped tbody tr:nth-of-type(odd), .uk-table-striped>tr:nth-of-type(odd) {
+    background: $frameColor;
+}
+
+.uk-table-striped tbody tr:nth-of-type(even), .uk-table-striped>tr:nth-of-type(even) {
+    background: $borderColor;
+}
+
 .section-title {
     text-align: center;
 }
 
 .text{
     color: $textColor;
-    font-size: 1.5em;
+    font-size: 1.5rem;
     font-weight: 400;
 
     &_huge{
         color: $titleColor;
-        font-size: 2.5em;
+        font-size: 2.5rem;
     }
 
     &_large{
         color: $textColor;
-        font-size: 1.75em;
+        font-size: 1.75rem;
     }
     
     &_small{
         color: $textColor;
-        font-size: 1.25em;
+        font-size: 1.25rem;
     }
     
     &_bold{
@@ -227,6 +254,10 @@ textarea{
     &__item {
         display: flex;
         justify-content: center;
+
+        img {
+            object-fit: cover;
+        }
     }
     
     &__item-wrapper {

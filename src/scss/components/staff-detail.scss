@@ -1,0 +1,102 @@
+.staff-detail {
+
+    &__container {}
+
+    &__content {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    &__top-left {
+        flex: 0 0 49%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 10px;
+    }
+
+    &__img-wrapper {}
+
+    &__img {
+        border-radius: 10px;
+    }
+
+    &__preview-grade {}
+
+    &__preview-phone {}
+
+    &__preview-phone-img {}
+
+    &__preview-phone-text {}
+
+    &__top-right {
+        flex: 0 0 49%;
+    }
+
+    &__descr {}
+
+    &__bottom {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    &__accordion {
+        background: $frameColor;
+        border-radius: 15px;
+        padding: 10px 20px;
+    }
+
+    &__accordion-item {}
+
+    &__accordion-item-title {
+    }
+
+    &__accordion-item-title-text {
+        margin: 0;
+    }
+
+    &__accordion-item-descr {}
+
+    &__slider {}
+
+    &__slider-title {
+        text-align: center;
+    }
+
+    &__slider-wrapper {}
+
+    &__slider-container {}
+
+    &__slider-items {}
+
+    &__slider-item {}
+
+    &__slider-img-wrapper {}
+
+    &__slider-img {
+        width: 100%;
+        height: 150px;
+        border-radius: 10px;
+    }
+
+    &__slider-navs {}
+
+    &__slider-nav-btn {}
+}
+
+@include media($mobile) {
+    .staff-detail {
+        &__top {
+            flex-direction: column;
+        }
+    }
+}
