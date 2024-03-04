@@ -5,9 +5,8 @@ class BurgerMenu {
             throw "Element not found";
         }
 
-        this.burgerMenu = root.querySelector('.burger__menu');
-        this.burgerButton = root.querySelector('.burger__button');
-        this.burgerMenu = document.querySelector('.burger-menu');
+        this.burgerButton = root;
+        this.burgerMenu = document.querySelector('.header__burger-menu');
 
         this.init();
     }
@@ -15,12 +14,7 @@ class BurgerMenu {
     init() {
         this.modal = UIkit.modal(this.burgerMenu);
         this.burgerButton.addEventListener('click', (event) => {
-            this.burgerButton.classList.toggle('burger__button_active');
-            this.modal.toggle();
-        });
-
-        UIkit.util.on('#burger-menu', 'hide', () => {
-            this.burgerButton.classList.remove('burger__button_active');
+            this.burgerButton.classList.toggle('header__burger-btn_active');
         });
     }
 }
